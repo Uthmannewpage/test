@@ -29,11 +29,11 @@
   }
   
   div.slide-text {
-    position: absolute;
+    position: left;
     width: 100%;
     top: 60%;
-    color: #fff;
-    text-align: center;
+    color: #5416c9;
+    text-align: left;
   }
   
   .btn {
@@ -51,7 +51,7 @@
   }
   
   .btn:active {
-    transform: scale(1.1); /* Removed asterisk (*) */
+    transform: scale(1.1); 
   }
   
   .btn-prev {
