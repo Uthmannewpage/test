@@ -20,22 +20,34 @@
     margin: auto;
   }
   
-  .slide {
+  div.slide {
+    position: relative; /* Position the container relative so that text can be positioned relative to it */
     width: 100%;
     max-width: 960px;
     height: 350px;
-    position: absolute;
     transition: all 0.5s;
-  }
-  
-  div.slide-text {
-    position: left;
-    width: 100%;
-    top: 60%;
-    color: #5416c9;
+}
+
+img {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Ensure proper block display */
+    position: relative; /* Position the image relatively within its container */
+    z-index: 1; /* Ensure the image appears below the text */
+}
+
+div.slide-text {
+    position: absolute; /* Position the text absolutely within its container */
+    width: 50%; /* Adjust this width as needed */
+    top: 60%; /* Adjust the vertical position */
+    left: 0; /* Align the text to the left */
+    color: #000000;
     text-align: left;
-    margin-right: 200;
-  }
+    padding: 20px; 
+    box-sizing: border-box; 
+    z-index: 2; 
+}
+
   
   .btn {
     position: absolute;
