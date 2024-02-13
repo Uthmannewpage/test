@@ -1,0 +1,56 @@
+main {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    flex-wrap: wrap; 
+  }
+  
+  main > div {
+    flex: 1;
+    margin-right: 16px;
+  }
+  
+  .test {
+    border: 1px solid var(--dark-color);
+    background-color: var(--background-color);
+    margin: 16px;
+    display: flex; /* Display children side by side */
+  }
+  .test > div {
+    display: flex; /* Display children side by side */
+    align-items: center; /* Align children vertically centered */
+  }
+  
+  .test > div > * {
+    margin-right: 16px; /* Space between child components */
+  }
+  
+  .test > div > *:last-child {
+    margin-right: 0; /* Remove margin from the last child */
+  }
+  
+  .test > div > * {
+    margin-right: 30px; /* Space between child components */
+  }
+  
+  .test > div > *:last-child {
+    margin-right: 0; /* Remove margin from the last child */
+  }
+  
+  .test > *:first-child {
+    margin-top: 0;
+  }
+  
+  main > div img {
+    max-width: 100%; /* Adjust images to their original sizes */
+    max-height: 100%; /* Adjust images to their original sizes */
+    object-fit: contain; /* Maintain aspect ratio */
+  }
+  
+  /* New CSS to display components side by side */
+  .test > * {
+    flex: 1; /* Each child takes equal space */
+    margin-right: 16px; /* Space between child components */
+  }
+  
