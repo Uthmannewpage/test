@@ -2,55 +2,52 @@ main {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; 
-    flex-wrap: wrap; 
-  }
-  
-  main > div {
-    flex: 1;
-    margin-right: 16px;
-  }
-  
-  .test {
-    border: 1px solid var(--dark-color);
+}
+
+main > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.test {
     background-color: var(--background-color);
     margin: 16px;
-    display: flex; /* Display children side by side */
-  }
-  .test > div {
-    display: flex; /* Display children side by side */
-    align-items: center; /* Align children vertically centered */
-  }
-  
-  .test > div > * {
-    margin-right: 16px; /* Space between child components */
-  }
-  
-  .test > div > *:last-child {
-    margin-right: 0; /* Remove margin from the last child */
-  }
-  
-  .test > div > * {
-    margin-right: 30px; /* Space between child components */
-  }
-  
-  .test > div > *:last-child {
-    margin-right: 0; /* Remove margin from the last child */
-  }
-  
-  .test > *:first-child {
-    margin-top: 0;
-  }
-  
-  main > div img {
-    max-width: 100%; /* Adjust images to their original sizes */
-    max-height: 100%; /* Adjust images to their original sizes */
-    object-fit: contain; /* Maintain aspect ratio */
-  }
-  
-  /* New CSS to display components side by side */
-  .test > * {
-    flex: 1; /* Each child takes equal space */
-    margin-right: 16px; /* Space between child components */
-  }
-  
+}
+
+.test > div {
+    display: flex;
+    align-items: center;
+    margin-right: 400px; /* Add margin-bottom property */
+}
+
+.test > div > * {
+    margin-right: 16px;
+}
+
+.test > div > *:last-child {
+    margin-right: 0;
+}
+
+.test > * {
+    flex: 1;
+}
+
+.test > *:last-child {
+    margin-right: 0;
+}
+
+main > div img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.test > div > div > strong > u {
+    font-size: 20px; /* Set font size */
+    color: #783384; /* Set font color */
+}
+
+.test > div > picture > img {
+    width: 400px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+}

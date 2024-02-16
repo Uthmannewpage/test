@@ -1,0 +1,13 @@
+.purple-box {
+    background-color: #783384;
+    color: white;
+    width: 100vw;
+    border-radius: 10px;
+    font-size: larger;
+    text-align: center;
+    
+  }
+  .common-menu > div a {
+    color: white;
+  }
+  

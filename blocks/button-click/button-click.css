@@ -1,0 +1,103 @@
+.main {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centering the buttons */
+}
+
+/* Target the container div that wraps the button groups */
+main > div {
+    display: flex;
+    justify-content: center; /* Center the button groups horizontally */
+    margin: 0 -8px; /* Adjust margin to decrease space between button groups */
+}
+
+/* Apply margin to each button click element */
+.button-click {
+    margin: 8px; /* Adjust the margin to control spacing */
+}
+
+.button-click > * {
+    border: 1px solid var(--dark-color); /* Add border to each child */
+    background-color: var(--background-color);
+    padding: 5px; /* Add padding for better click area */
+    cursor: pointer; /* Adding cursor pointer to indicate interactivity */
+    transition: background-color 0.3s ease; /* Adding transition for smooth hover effect */
+    position: relative; /* Position relative for pseudo-elements */
+}
+
+/* Change background color on hover for each child */
+.button-click > *:hover {
+    background-color: lightgrey;
+}
+
+.button-click > *:not(:last-child) {
+    margin-right: 16px; /* Add space between buttons, except for the last child */
+}
+
+.button-click > div {
+    display: inline-block; /* Change display to inline-block */
+    align-items: center;
+}
+
+.button-click > div > * {
+    margin-right: 16px;
+}
+
+.button-click > div > *:last-child {
+    margin-right: 0;
+}
+
+.button-click > div > strong {
+    text-decoration: underline; /* Underlining all button text */
+}
+
+/* Adding the line for all buttons */
+.button-click::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%; /* Adjusting width to include padding */
+    height: 5px;
+    background-color: transparent; /* Set the default color to transparent */
+    z-index: -1; /* Move the underline behind the button */
+}
+
+/* Adjusting colors for individual buttons */
+.button-click:nth-child(1)::after {
+    background-color: purple;
+}
+
+.button-click:nth-child(2)::after {
+    background-color: yellow;
+}
+
+.button-click:nth-child(3)::after {
+    background-color: blue;
+}
+
+.button-click:nth-child(4)::after {
+    background-color: green;
+}
+
+.main > div img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.button-click {
+    margin: 8px; /* Adjust margin to decrease space horizontally */
+    position: relative;
+}
+/* Increase padding to make buttons bigger */
+.button-click > * {
+    padding: 28px; /* Adjust padding for bigger buttons */
+}
+
+/* Change text color */
+.button-click > * {
+    color: #783384; /* Set text color to #783384 */
+}

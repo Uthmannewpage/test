@@ -1,0 +1,74 @@
+.common-menu > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px; /* Adjust the gap between text and image */
+  }
+  
+  .common-menu > div > div {
+    flex: 1;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .common-menu > div > .common-menu-img-col {
+    order: 0;
+  }
+  
+  .common-menu > div > .common-menu-img-col img {
+    display: block;
+    width: 100%;
+  }
+  
+  @media (max-width: 900px) {
+    .common-menu > div {
+      flex-direction: column;
+    }
+  
+    .common-menu > div > div {
+      order: 0;
+    }
+  
+    .common-menu > div > .common-menu-img-col {
+      order: 1;
+    }
+  }
+  
+  .common-menu > div {
+    color: black; /* Set the font color to black */
+  }
+
+  .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns, each taking up equal space */
+  gap: 16px; /* Adjust the gap between the columns */
+}
+
+.common-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.common-menu > div {
+  flex: 1;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.common-menu > div > div {
+  flex: 1;
+}
+
+.common-menu > div > .common-menu-img-col {
+  order: 0;
+}
+
+.common-menu > div > .common-menu-img-col img {
+  display: block;
+  width: 100%;
+}
+
+

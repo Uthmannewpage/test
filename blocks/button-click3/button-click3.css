@@ -1,0 +1,60 @@
+/* Apply margin to each button click element */
+.button-click3 {
+    margin: 8px; /* Adjust the margin to control spacing */
+}
+
+.button-click3 > * {
+    border: 1px solid var(--dark-color); /* Add border to each child */
+    background-color: var(--background-color);
+    padding: 5px; /* Add padding for better click area */
+    cursor: pointer; /* Adding cursor pointer to indicate interactivity */
+    transition: background-color 0.3s ease; /* Adding transition for smooth hover effect */
+}
+
+/* Change background color on hover for each child */
+.button-click3 > *:hover {
+    background-color: lightgrey;
+}
+
+.button-click3 > *:not(:last-child) {
+    margin-right: 16px; /* Add space between buttons, except for the last child */
+}
+
+.button-click3 > div {
+    display: flex;
+    align-items: center;
+}
+
+.button-click3 > div > * {
+    margin-right: 16px;
+}
+
+.button-click3 > div > *:last-child {
+    margin-right: 0;
+}
+
+.button-click3 > div > strong {
+    text-decoration: underline; /* Underlining all button text */
+}
+
+/* Adding the line for all buttons */
+.button-click3::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: calc(100% ); /* Adjusting width to include padding */
+    height: 5px;
+    background-color: rgb(0, 158, 11); /* Adjusting colors for button-click3 */
+}
+
+.main > div img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.button-click3 {
+    margin: 8px; /* Adjust margin to decrease space horizontally */
+    position: relative;
+}

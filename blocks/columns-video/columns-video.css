@@ -1,0 +1,48 @@
+.columns-video > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns-video img {
+  width: 100%;
+}
+
+.columns-video > div > div {
+  order: 1;
+}
+
+.columns-video > div > .columns-img-col {
+  order: 0;
+}
+
+.columns-video > div > .columns-img-col img {
+  display: block;
+}
+
+@media (width >= 900px) {
+  .columns-video > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 32px;
+  }
+
+  .columns-video > div > div {
+    flex: 1;
+    order: unset;
+  }
+}
+
+.columns-video h1 {
+  color: purple;
+}
+
+.columns-video img {
+  max-width: none;
+}
+
+
+.custom-video {
+  width: 100%; /* Set the width of the video to 100% of its container */
+  height: auto; /* Set the height of the video to auto to maintain its aspect ratio */
+  object-fit: cover; /* Scale the video up or down to cover the entire container */
+}

@@ -1,0 +1,46 @@
+.columns-text > div {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.columns-text > div > div {
+  order: 1;
+}
+
+.columns-text > div > .columns-img-col {
+  order: 0;
+}
+
+.columns-text > div > .columns-img-col img {
+  display: block;
+}
+
+@media (width >= 900px) {
+  .columns-text > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 32px;
+  }
+
+  .columns-text > div > div {
+    flex: 1;
+    order: unset;
+  }
+}
+.columns-text > div > div > strong {
+  color: purple;
+}
+
+.common-menu > div a {
+  color: rgb(255, 255, 255);
+}
+
+
+
+.columns-text img {
+  max-width: none;
+}
+.columns-text img {
+  transform: rotate(270deg);
+}

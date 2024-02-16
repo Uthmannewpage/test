@@ -1,0 +1,88 @@
+.main {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centering the buttons */
+}
+
+/* Target the container div that wraps the button groups */
+main > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the button groups horizontally */
+    margin: 0 -8px; /* Adjust margin to decrease space between button groups */
+}
+
+/* Apply margin to each button click element */
+.button-click1 {
+    margin: 8px; /* Adjust the margin to control spacing */
+}
+
+.button-click1 > * {
+    border: 1px solid var(--dark-color); /* Add border to each child */
+    background-color: var(--background-color);
+    padding: 5px; /* Add padding for better click area */
+    cursor: pointer; /* Adding cursor pointer to indicate interactivity */
+    transition: background-color 0.3s ease; /* Adding transition for smooth hover effect */
+}
+
+/* Change background color on hover for each child */
+.button-click1 > *:hover {
+    background-color: lightgrey;
+}
+
+.button-click1 > *:not(:last-child) {
+    margin-right: 16px; /* Add space between buttons, except for the last child */
+}
+
+.button-click1 > div {
+    display: flex;
+    align-items: center;
+}
+
+.button-click1 > div > * {
+    margin-right: 16px;
+}
+
+.button-click1 > div > *:last-child {
+    margin-right: 0;
+}
+
+.button-click1 > div > strong {
+    text-decoration: underline; 
+}
+
+
+.button-click1::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: calc(100% ); 
+    height: 5px;
+    background-color: rgb(231, 194, 11);
+}
+
+.button-click1:nth-child(2)::after {
+    background-color: yellow;
+}
+
+.button-click1:nth-child(3)::after {
+    background-color: blue;
+}
+
+.button-click1:nth-child(4)::after {
+    background-color: green;
+}
+
+.main > div img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.button-click1 {
+    margin: 8px; /* Adjust margin to decrease space horizontally */
+    position: relative;
+}
